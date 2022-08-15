@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    background: transparent;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    text-align: right;
+  }
+  .nav .menu-navlink {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-navlink {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=ed.css.map */

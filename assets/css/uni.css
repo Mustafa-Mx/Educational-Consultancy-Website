@@ -1,0 +1,119 @@
+@font-face {font-family: "Buenos Aires";
+    src: url("http://db.onlinewebfonts.com/t/604c3826d04854ecb7e53030f4acda4c.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/604c3826d04854ecb7e53030f4acda4c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/604c3826d04854ecb7e53030f4acda4c.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/604c3826d04854ecb7e53030f4acda4c.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/604c3826d04854ecb7e53030f4acda4c.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/604c3826d04854ecb7e53030f4acda4c.svg#Buenos Aires") format("svg"); /* iOS 4.1- */
+}
+.format{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Roboto" , sans-serif;
+}
+
+.image-banner{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.image-banner>img{
+    margin: 10px;
+    padding:10px;
+    filter: drop-shadow(3px 3px 4px grey);
+}
+.text{
+    padding: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    line-height: 33px;
+}
+.btn-course>a{
+    color:#fff
+}
+.m-10{
+    color: grey;
+    text-align: justify;
+    margin: 10px;
+    margin-top:2rem
+}
+.text-Q{
+    font-weight: 600;
+    color: #198754;
+    font-size: 2.1rem;
+    padding:0.5rem;
+}
+ul.Q-list>li:before {
+    font-family: FontAwesome;
+    position: absolute;
+    transform: translateX(-30px);
+    color: rgb(255 255 0);
+    text-align: center;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px black;
+    box-shadow: 0 0px 7px -2px black;
+  }
+
+li.Q-item:before {
+    content:"\f0e7";
+ }
+ .Q-item{
+    padding:1rem;
+ }
+
+.hr {
+    border-top: 0.5px solid #d3d5db;
+    width: 80%;
+    margin-top: 3rem;
+    border-radius: 50%;
+}
+
+.vertical{
+    transform: rotate(90deg);
+}
+
+.um-10{
+    margin-top:5rem
+}
+
+.left{
+    border-left:0.5px solid #d3d5db;
+    padding-left: 1rem;
+}
+
+#imgC{
+    max-width: 320px;
+}
+/* thead{
+    background-color: #198754;
+    border:none;
+} */
+
+thead{
+    background: #262163;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+
+
+/* @keyframes spacing {
+    from{
+        letter-spacing: 100px;
+        opacity:0
+    }
+    to{
+        letter-spacing: normal;
+        opacity:1
+    }
+    
+} */

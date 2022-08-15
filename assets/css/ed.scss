@@ -1,0 +1,25 @@
+@media (max-width: 992px){
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+    
+    .menu-nav {
+        display: block;
+        background: transparent;
+        transform: translateY(0);
+        height: 100%;
+        text-align: right;
+        
+        &link{
+            display: inline;
+            padding-right: 1.5rem;
+        }
+        &link {
+            font-size: 1.5rem;
+          }
+        }
+
+    }
+}

@@ -1,0 +1,751 @@
+
+******************************************* 
+** - Default Area Style
+** - Preloader Area Style
+** - Go Top Area Style
+** - Page navigation Area Style
+** - Video wave Style
+** - Navbar Area Style
+** - Main Banner Area Style 
+** - Main Slider Area Style 
+** - Service Area Style
+** - Counter Area Style
+** - Client Area Style
+** - Project Area Style
+** - Project Details Area Style
+** - Blog Area Style
+** - Blog Details Area Style
+** - Blog Right Sidebar Area Style
+** - Blog Left Sidebar Area Style
+** - Blog Details Area Style
+** - Footer Top Area Style
+** - Footer Bottom Area Style
+** - Blog Details Area Style
+** - Contact Area Style
+** - Log In Area Style
+** - Sign Up Area Style
+** - Recover Password Area Style
+** - Coming Soon Area Style   
+** - 404 Error Area Style
+** - FAQ Area Style
+*******************************************
+/*
+
+/*
+Default Style
+============================*/
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: "Muli", sans-serif;
+  color: #4a4a4a;
+}
+
+a {
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #012068;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+button {
+  outline: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+/*
+Go Top Style
+================================*/
+
+/*
+Page navigation Area Style
+================================*/
+
+/*
+Video wave Style
+================================*/
+
+/*
+Default Btn Area Style
+================================*/
+
+/*
+Section Title Area Style
+================================*/
+
+/*
+Preloader Area Style
+================================*/
+
+/*===== DEFAULT STYLE END ======*/
+/*
+Peru Nav Area Style
+================================*/
+
+/*
+Banner Area Style
+================================*/
+
+/*
+Hero Slider Area Style
+================================*/
+
+/*
+Box Area Style
+================================*/
+
+/*
+About Us Area Style
+================================*/
+
+/*
+Start Best Service Area Style
+================================*/
+
+/*
+Start Choose Area Style
+================================*/
+
+/*
+Start Choose Area Style
+================================*/
+
+/*
+Our financial Area CSS
+=================================*/
+
+/*
+Partner Area Style
+================================*/
+
+/*
+Team Area Style
+================================*/
+
+/*
+Client Area Style
+================================*/
+
+/*
+Blog Area CSS
+=================================*/
+
+/*
+FAQ Area Style
+================================*/
+
+/*
+Footer Top Area Style
+================================*/
+
+/*
+Footer Bottom Area Style
+================================*/
+
+/*
+Single Processing Area Style
+================================*/
+
+/*
+Service Area Style
+================================*/
+
+/*
+Features Area Style
+================================*/
+
+/*
+Pricing Area Style
+================================*/
+
+/*
+Page Title Area Style
+================================*/
+
+/*
+Project Area Two Style
+================================*/
+
+/*
+Pagenavigation Area Style
+================================*/
+
+/*
+Contact Area CSS
+=======================*/
+
+.single-contact-box {
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.single-contact-box i {
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px dashed #3aae36;
+  border-radius: 50%;
+  font-size: 20px;
+  display: inline-block;
+  color: #3aae36;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.single-contact-box:hover i {
+  background-color: #3aae36;
+  color: #ffffff;
+}
+
+.single-contact-box .content-title h3 {
+  margin-bottom: 10px;
+}
+
+.single-contact-box .content-title a {
+  display: block;
+  font-size: 15px;
+  color: #747171;
+}
+
+.single-contact-box .content-title a:hover {
+  color: #3aae36;
+}
+
+/*
+404 Error Area Style
+================================*/
+
+/*
+FAQ PAGE Area Style
+================================*/
+
+/*
+Client PAGE Area Style
+================================*/
+
+/*
+Coming Soon Area Style
+================================*/
+
+/*
+Sign In  Area Style
+================================*/
+
+/*
+Blog Details Area Style
+================================*/
+
+/*
+Sidebar Widget Area Style
+================================*/
+
+/*
+Right Sidebar Area Style
+================================*/
+
+/*
+Service Details Area Style
+================================*/
+
+/*
+Project Details Area Style
+================================*/
+
+/*Shop Area Style
+=====================================================*/
+
+/*Cart Area CSS
+=====================================================*/
+
+/*Checkout Area Style 
+=====================================================*/
+
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) {
+  display: none;
+}
+
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label {
+  padding-left: 27px;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  color: #012068;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #3aae36;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+/*
+Shop Details Style
+================================*/
+
+label {
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=style.css.map *//*
+@File: Peru Template Styles
+
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+
+This files table contents are outlined below>>>>>
+
+******************************************* 
+** - Default Area Style
+** - Preloader Area Style
+** - Go Top Area Style
+** - Page navigation Area Style
+** - Video wave Style
+** - Navbar Area Style
+** - Main Banner Area Style 
+** - Main Slider Area Style 
+** - Service Area Style
+** - Counter Area Style
+** - Client Area Style
+** - Project Area Style
+** - Project Details Area Style
+** - Blog Area Style
+** - Blog Details Area Style
+** - Blog Right Sidebar Area Style
+** - Blog Left Sidebar Area Style
+** - Blog Details Area Style
+** - Footer Top Area Style
+** - Footer Bottom Area Style
+** - Blog Details Area Style
+** - Contact Area Style
+** - Log In Area Style
+** - Sign Up Area Style
+** - Recover Password Area Style
+** - Coming Soon Area Style   
+** - 404 Error Area Style
+** - FAQ Area Style
+*******************************************
+/*
+
+/*
+Default Style
+============================*/
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: "Muli", sans-serif;
+  color: #4a4a4a;
+}
+
+a {
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #012068;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+button {
+  outline: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+/*
+Go Top Style
+================================*/
+
+/*
+Page navigation Area Style
+================================*/
+
+/*
+Video wave Style
+================================*/
+
+/*
+Default Btn Area Style
+================================*/
+
+/*
+Section Title Area Style
+================================*/
+
+/*
+Preloader Area Style
+================================*/
+
+/*===== DEFAULT STYLE END ======*/
+/*
+Peru Nav Area Style
+================================*/
+
+/*
+Banner Area Style
+================================*/
+
+/*
+Hero Slider Area Style
+================================*/
+
+/*
+Box Area Style
+================================*/
+
+/*
+About Us Area Style
+================================*/
+
+/*
+Start Best Service Area Style
+================================*/
+
+/*
+Start Choose Area Style
+================================*/
+
+/*
+Start Choose Area Style
+================================*/
+
+/*
+Our financial Area CSS
+=================================*/
+
+/*
+Partner Area Style
+================================*/
+
+/*
+Team Area Style
+================================*/
+
+/*
+Client Area Style
+================================*/
+
+/*
+Blog Area CSS
+=================================*/
+
+/*
+FAQ Area Style
+================================*/
+
+/*
+Footer Top Area Style
+================================*/
+
+/*
+Footer Bottom Area Style
+================================*/
+
+/*
+Single Processing Area Style
+================================*/
+
+/*
+Service Area Style
+================================*/
+
+/*
+Features Area Style
+================================*/
+
+/*
+Pricing Area Style
+================================*/
+
+/*
+Page Title Area Style
+================================*/
+
+/*
+Project Area Two Style
+================================*/
+
+/*
+Pagenavigation Area Style
+================================*/
+
+/*
+Contact Area CSS
+=======================*/
+
+.single-contact-box {
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.single-contact-box i {
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px dashed #3aae36;
+  border-radius: 50%;
+  font-size: 20px;
+  display: inline-block;
+  color: #3aae36;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.single-contact-box:hover i {
+  background-color: #3aae36;
+  color: #ffffff;
+}
+
+.single-contact-box .content-title h3 {
+  margin-bottom: 10px;
+}
+
+.single-contact-box .content-title a {
+  display: block;
+  font-size: 15px;
+  color: #747171;
+}
+
+.single-contact-box .content-title a:hover {
+  color: #3aae36;
+}
+
+/*
+404 Error Area Style
+================================*/
+
+/*
+FAQ PAGE Area Style
+================================*/
+
+/*
+Client PAGE Area Style
+================================*/
+
+/*
+Coming Soon Area Style
+================================*/
+
+/*
+Sign In  Area Style
+================================*/
+
+/*
+Blog Details Area Style
+================================*/
+
+/*
+Sidebar Widget Area Style
+================================*/
+
+/*
+Right Sidebar Area Style
+================================*/
+
+/*
+Service Details Area Style
+================================*/
+
+/*
+Project Details Area Style
+================================*/
+
+/*Shop Area Style
+=====================================================*/
+
+/*Cart Area CSS
+=====================================================*/
+
+/*Checkout Area Style 
+=====================================================*/
+
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) {
+  display: none;
+}
+
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label {
+  padding-left: 27px;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  color: #012068;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.checkout-area .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #3aae36;
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+/*
+Shop Details Style
+================================*/
+
+label {
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=style.css.map */
