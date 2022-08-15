@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERICOLOGO.COM</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- javascript -->
+
+
+
+    <!-- css -->
+
+    <style>
+        /* GENERAL STYLING */
+        body {
+            background: url('https://wallpaperaccess.com/full/2391514.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: contain;
+            max-width: 100%;
+        }
+
+        *,
+        body {
+            padding: 0%;
+            margin: 0%;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(256, 256, 256, 0.4);
+            position: relative;
+            padding: 16px 0px;
+            width: 100%;
+        }
+
+        /* LOGO STYLING */
+
+        .container h3 {
+            cursor: pointer;
+            display: inline-block;
+            width: 300px;
+            padding-left: 8px;
+        }
+
+        .container span em {
+            font-size: 1rem;
+            font-weight: normal;
+            color: red;
+        }
+
+        /* DROPMENUE STYLING */
+
+        .side_menue {
+            position: relative;
+            background-color: rgba(256, 256, 256, 0.7);
+            right: 0%;
+            top: 100%;
+            border: 1px solid black;
+            /* border-bottom-left-radius:25px; */
+            height: 0px;
+            overflow: hidden;
+        }
+
+        .open {
+            height: auto;
+        }
+
+        .container li {
+            list-style: none;
+            border-bottom: 0.5px solid white;
+        }
+
+        .container a {
+            display: block;
+            text-decoration: none;
+            padding: 23px 80px;
+            text-align: center;
+        }
+
+        .container li:last-child {
+            border-bottom: none;
+        }
+
+        .container a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        /* DROPDOWN BUTTON */
+        .slider {
+
+            display: inline-block;
+            position: absolute;
+            background-color: rgba(256, 256, 256, 0);
+
+            width: 30px;
+            height: 28px;
+            right: 11px;
+            top: 15px;
+            cursor: pointer;
+
+        }
+
+        .slider div {
+            margin: 0%;
+            padding: 0%;
+
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            height: 3px;
+            top: 4px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .slider::after {
+            margin: 0%;
+            padding: 0%;
+
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            left: 0%;
+            background-color: white;
+            top: 12px;
+        }
+
+        .slider::before {
+            margin: 0%;
+            padding: 0%;
+
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            right: 0%;
+            background-color: white;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <h3>GENERICO<span><em>LOGO</em></span></h3>
+
+            <nav class="side_menue">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+                </ul>
+            </nav>
+            <div class="slider">
+                <div></div>
+            </div>
+
+        </div>
+    </header>
+    <script>
+        // alert("yo ninja! i am a developer");
+        $('.slider').click(function() {$('.side_menue').toggleClass('open');})
+    </script>
+</body>
+
+</html>

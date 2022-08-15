@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div> -->
+     <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+     <!--Navbar-->
+     <nav class="menu-container">
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+                        <a href="#" class="menu-logo">
+                        <img src="./img/1.png" alt="ysd education learning abroad admission"/>
+                        </a>
+                <div class="menu">
+                <ul>
+                </ul>
+                <ul>
+                    <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#admissions">
+                        Admissions
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#Contact">
+                        Contact us
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#about">
+                        About us
+                    </a>
+                    </li>
+                </ul>
+                </div>
+      </nav>
+
+      <!-- <svgfgd class="img svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"> <path fill="#133330" fill-opacity="1" d="M0,192L21.8,202.7C43.6,213,87,235,131,229.3C174.5,224,218,192,262,170.7C305.5,149,349,139,393,149.3C436.4,160,480,192,524,181.3C567.3,171,611,117,655,122.7C698.2,128,742,192,785,229.3C829.1,267,873,277,916,234.7C960,192,1004,96,1047,90.7C1090.9,85,1135,171,1178,176C1221.8,181,1265,107,1309,90.7C1352.7,75,1396,117,1418,138.7L1440,160L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path></svg> 
+
+      <img src="https://media.istockphoto.com/photos/circle-of-smoke-picture-id1221473823?k=20&m=1221473823&s=612x612&w=0&h=kt_c8aMksDF5_oJP6vlcOhDb362wdxJ6BTX1hIHPDY0=" alt="asdasd" class="img1"> -->
+      
+    <div class="blurred-wrapper">
+        <!-- <header class="main-header container">
+            <a href="index.html" class="logo">Wallet<span>.</span></a>
+            <a href="#" class="btn sign-up">Sign up</a>
+        </header> -->
+        <section class="hero container">
+            <div class="content-wrapper ">
+                <h5 class="tagline"> How can we help?</h5>
+                <h1 class="title">We'd love to here from you<span>.</span></h1>
+                <p class="message">More ways to reach us? Click below</p>
+                <a href="#" class="btn cta">More ways</a>
+            </div>
+
+            <div class="ss">
+                <form class="form">
+                    <h3> Got Questions?
+                        <span>Get in Touch with us.</span>
+                    </h3>
+            
+                    <label for="username">Name</label>
+                    <input type="text" placeholder="Username" id="username">
+            
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="johnDoe@example.com" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea placeholder="Type here" id="username"></textarea>
+            
+                    <button class="btn cta">Sign In</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+	
+<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="./js/carousel.js"></script>
+<script>
+          const tl = gsap.timeline({defaults: {ease: "power2.inOut", duration: 1.5}})
+          tl.from('img, .menu-container', { y: '-100%', opacity: 0 , duration:0.5} )
+            .from('.tagline , .message , .title' ,{y:50 , clipPath: 'inset(0 0 100% 0)' , duration:.8} , "-=0.2")
+            .from(' li , form , .btn , .cta', {opacity: 0, stagger: 0.2, duration: .5 , clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);'} , "-=1")
+</script>
+</body>
+</html>

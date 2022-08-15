@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+<style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+<style lang="en" type="text/css" id="dark-mode-native-style"></style>
+<style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+
+ 
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <title>Document</title>
+</head>
+<head>
+    <style>
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+
+        .gm-control-active:focus>img:nth-child(1),
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1),
+        .gm-control-active:disabled>img:nth-child(1) {
+            display: none
+        }
+
+        .gm-control-active:focus>img:nth-child(2),
+        .gm-control-active:hover>img:nth-child(2) {
+            display: block
+        }
+
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+
+        .gm-control-active:disabled>img:nth-child(4) {
+            display: block
+        }
+    </style>
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400&amp;lang=en">
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=en">
+    <style>
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+
+        .gm-ui-hover-effect>span {
+            background-color: #000
+        }
+
+        @media (forced-colors:active),
+        (prefers-contrast:more) {
+            .gm-ui-hover-effect>span {
+                background-color: ButtonText
+            }
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-cc button,
+        .gm-style .gm-style-cc span {
+            outline-offset: 3px
+        }
+    </style>
+    <style>
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px
+        }
+
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, .04);
+            border: 1px solid #d2e3fc
+        }
+
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, .12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+
+        .dismissButton:focus:not(:focus-visible) {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            outline: none
+        }
+
+        .dismissButton:focus-visible {
+            background-color: rgba(66, 133, 244, .12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, .16);
+            border: 1px solid #d2e2fd
+        }
+
+        .dismissButton:hover:focus:not(:focus-visible) {
+            background-color: rgba(66, 133, 244, .04);
+            border: 1px solid #d2e3fc
+        }
+
+        .dismissButton:hover:focus-visible {
+            background-color: rgba(66, 133, 244, .16);
+            border: 1px solid #d2e2fd
+        }
+
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, .16);
+            border: 1px solid #d2e2fd;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15)
+        }
+
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043
+        }
+    </style>
+    <style>
+        .gm-style-moc {
+            background-color: rgba(0, 0, 0, .45);
+            pointer-events: none;
+            text-align: center;
+            transition: opacity ease-in-out
+        }
+
+        .gm-style-mot {
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 22px;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+    <title>Author - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="css/animate.css+owl.carousel.min.css+owl.theme.default.min.css+magnific-popup.css+flaticon.css+style.css.pagespeed.cc.vY6Q4GACwD.css">
+    <style type="text/css">
+        .scrollax-performance,
+        .scrollax-performance *,
+        .scrollax-performance *:before,
+        .scrollax-performance *:after {
+            pointer-events: none !important;
+            -webkit-animation-play-state: paused !important;
+            animation-play-state: paused !important;
+        }
+
+        ;
+    </style>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/49/7/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/49/7/util.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/49/7/map.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/49/7/stats.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/49/7/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/49/7/controls.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-new-gr-c-s-check-loaded="14.1067.0"
+    data-gr-ext-installed="">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Author<span>.</span></a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#chapter-section" class="nav-link"><span>Chapter</span></a></li>
+                    <li class="nav-item"><a href="#testimonial-section" class="nav-link"><span>Reviews</span></a></li>
+                    <li class="nav-item"><a href="#projects-section" class="nav-link"><span>My Books</span></a></li>
+                    <li class="nav-item"><a href="#author-section" class="nav-link"><span>Author</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-wrap js-fullheight" style="height: 820px;">
+        <div class="overlay"></div>
+        <div class="container-fluid px-0">
+            <div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-end"
+                style="height: 820px;">
+                <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+                <script data-pagespeed-no-defer="">//<![CDATA[
+                    (function () {
+                        for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) { if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters."); b != Array.prototype && b != Object.prototype && (b[c] = a.value) }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) { var m = k[l]; m in h || (h[m] = {}); h = h[m] }
+                        var n = k[k.length - 1], p = h[n], q = p ? p : function (b) { var c; if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined"); c = this + ""; if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value"); b |= 0; for (var a = ""; b;)if (b & 1 && (a += c), b >>>= 1) c += c; return a }; q != p && null != q && g(h, n, { configurable: !0, writable: !0, value: q }); var t = this;
+                        function u(b, c) { var a = b.split("."), d = t; a[0] in d || !d.execScript || d.execScript("var " + a[0]); for (var e; a.length && (e = a.shift());)a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c }; function v(b) { var c = b.length; if (0 < c) { for (var a = Array(c), d = 0; d < c; d++)a[d] = b[d]; return a } return [] }; function w(b) { var c = window; if (c.addEventListener) c.addEventListener("load", b, !1); else if (c.attachEvent) c.attachEvent("onload", b); else { var a = c.onload; c.onload = function () { b.call(this); a && a.call(this) } } }; var x; function y(b, c, a, d, e) { this.h = b; this.j = c; this.l = a; this.f = e; this.g = { height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight, width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth }; this.i = d; this.b = {}; this.a = []; this.c = {} }
+                        function z(b, c) {
+                            var a, d, e = c.getAttribute("data-pagespeed-url-hash"); if (a = e && !(e in b.c)) if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1; else { d = c.getBoundingClientRect(); var f = document.body; a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop); d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft); f = a.toString() + "," + d; b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width) } a && (b.a.push(e),
+                                b.c[e] = !0)
+                        } y.prototype.checkImageForCriticality = function (b) { b.getBoundingClientRect && z(this, b) }; u("pagespeed.CriticalImages.checkImageForCriticality", function (b) { x.checkImageForCriticality(b) }); u("pagespeed.CriticalImages.checkCriticalImages", function () { A(x) });
+                        function A(b) {
+                            b.b = {}; for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d)a = a.concat(v(document.getElementsByTagName(c[d]))); if (a.length && a[0].getBoundingClientRect) {
+                                for (d = 0; c = a[d]; ++d)z(b, c); a = "oh=" + b.l; b.f && (a += "&n=" + b.f); if (c = !!b.a.length) for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) { var e = "," + encodeURIComponent(b.a[d]); 131072 >= a.length + e.length && (a += e) } b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0); C = a; if (c) {
+                                    d = b.h; b = b.j; var f; if (window.XMLHttpRequest) f =
+                                        new XMLHttpRequest; else if (window.ActiveXObject) try { f = new ActiveXObject("Msxml2.XMLHTTP") } catch (r) { try { f = new ActiveXObject("Microsoft.XMLHTTP") } catch (D) { } } f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
+                                }
+                            }
+                        }
+                        function B() { var b = {}, c; c = document.getElementsByTagName("IMG"); if (!c.length) return {}; var a = c[0]; if (!("naturalWidth" in a && "naturalHeight" in a)) return {}; for (var d = 0; a = c[d]; ++d) { var e = a.getAttribute("data-pagespeed-url-hash"); e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = { rw: a.width, rh: a.height, ow: a.naturalWidth, oh: a.naturalHeight }) } return b } var C = ""; u("pagespeed.CriticalImages.getBeaconData", function () { return C });
+                        u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) { var r = new y(b, c, a, e, f); x = r; d && w(function () { window.setTimeout(function () { A(r) }, 0) }) });
+                    })();
+
+                    pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'https://preview.colorlib.com/theme/author/', '-ilGEe-FWC', true, false, 'zMvJzzwo1HI');
+//]]></script><img class="one-third js-fullheight align-self-end order-md-last img-fluid"
+                    src="images/undraw_book_lover_mkck.svg" alt="" data-pagespeed-url-hash="3293315809"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);" style="height: 820px;">
+                <div class="one-forth d-flex align-items-center ftco-animate js-fullheight fadeInUp ftco-animated"
+                    style="height: 820px;">
+                    <div class="text mt-5">
+                        <span class="subheading">Best Seller Book Of The Week</span>
+                        <h1>Clue Of The Wooden Cottage</h1>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p><a href="#" class="btn btn-primary py-3 px-4">Buy Now For $22.78</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pb ftco-partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="partner d-flex justify-content-center"><img
+                            src="images/xpartner-1.png.pagespeed.ic.b7FlbbQVdf.webp" class="img-fluid"
+                            alt="Colorlib Template" data-pagespeed-url-hash="2874376045"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                </div>
+                <div class="col-md-12 col-lg ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="partner d-flex justify-content-center"><img
+                            src="images/xpartner-2.png.pagespeed.ic.4tCtqXfPLh.webp" class="img-fluid"
+                            alt="Colorlib Template" data-pagespeed-url-hash="3168875966"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                </div>
+                <div class="col-md-12 col-lg ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="partner d-flex justify-content-center"><img
+                            src="images/xpartner-3.png.pagespeed.ic.K6b-CsdlC4.webp" class="img-fluid"
+                            alt="Colorlib Template" data-pagespeed-url-hash="3463375887"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                </div>
+                <div class="col-md-12 col-lg ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="partner d-flex justify-content-center"><img
+                            src="images/xpartner-4.png.pagespeed.ic.DaTQYymmyu.webp" class="img-fluid"
+                            alt="Colorlib Template" data-pagespeed-url-hash="3757875808"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                </div>
+                <div class="col-md-12 col-lg ftco-animate fadeInUp ftco-animated">
+                    <a href="#" class="partner d-flex justify-content-center"><img
+                            src="images/xpartner-5.png.pagespeed.ic.A4xeUmT9Fd.webp" class="img-fluid"
+                            alt="Colorlib Template" data-pagespeed-url-hash="4052375729"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-about img ftco-section" id="about-section">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-6 col-lg-6 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="img d-flex align-self-stretch align-items-center"
+                            style="background-image:url(images/xbg_1.jpg.pagespeed.ic.XqukVo4x3e.webp)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 pl-md-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+                            <h2 class="mb-4">About The Book</h2>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
+                                your mouth.</p>
+                            <div class="text-about">
+                                <h4>Award achievements</h4>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
+                                    at the coast of the Semantics, a large language ocean.</p>
+                                <h4>Read On Any Devices</h4>
+                                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                                    language ocean.</p>
+                                <h4>Very High Resolution</h4>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+        <div class="container">
+            <div class="row d-md-flex align-items-center align-items-stretch">
+                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                    <div class="block-18 bg-light">
+                        <div class="text">
+                            <strong class="number" data-number="1100">1,100</strong>
+                            <span>Copies Sold</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                    <div class="block-18 bg-light">
+                        <div class="text">
+                            <strong class="number" data-number="1200">1,200</strong>
+                            <span>Copies Released</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                    <div class="block-18 bg-light">
+                        <div class="text">
+                            <strong class="number" data-number="340">340</strong>
+                            <span>Cup Of Coffee</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate fadeInUp ftco-animated">
+                    <div class="block-18 bg-light">
+                        <div class="text">
+                            <strong class="number" data-number="12000">12,000</strong>
+                            <span>Happy Readers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pb ftco-no-pt" id="chapter-section">
+        <div class="container">
+            <div class="row justify-content-center py-5 mt-5">
+                <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                    <h2 class="mb-4">What's Inside The Book</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <nav id="navi">
+                        <ul>
+                            <li><a href="#page-1" class="">Title page</a></li>
+                            <li><a href="#page-2" class="">Copyright</a></li>
+                            <li><a href="#page-3" class="">Table of contents</a></li>
+                            <li><a href="#page-4" class="">Dedication</a></li>
+                            <li><a href="#page-5" class="">Foreword</a></li>
+                            <li><a href="#page-6" class="">Prologue</a></li>
+                            <li><a href="#page-7" class="">Epilogue</a></li>
+                            <li><a href="#page-8" class="">Epigraph</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div id="page-1" class="page bg-light one">
+                        <h2 class="heading">Title Page</h2>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its own,
+                            safe country. But nothing the copy said could convince her and so it didn’t take long until
+                            a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their.</p>
+                    </div>
+                    <div id="page-2" class="page bg-light two">
+                        <h2 class="heading">Copyright</h2>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its own,
+                            safe country. But nothing the copy said could convince her and so it didn’t take long until
+                            a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their.</p>
+                    </div>
+                    <div id="page-3" class="page bg-light three">
+                        <h2 class="heading">Table of Contents</h2>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its own,
+                            safe country. But nothing the copy said could convince her and so it didn’t take long until
+                            a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their.</p>
+                    </div>
+                    <div id="page-4" class="page bg-light four">
+                        <h2 class="heading">Dedication</h2>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its own,
+                            safe country. But nothing the copy said could convince her and so it didn’t take long until
+                            a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their.</p>
+                    </div>
+                    <div id="page-5" class="page bg-light five">
+                        <h2 class="heading">Foreword</h2>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its own,
+                            safe country. But nothing the copy said could convince her and so it didn’t take long until
+                            a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their.</p>
+                    </div>
+                    <div id="page-6" class="page bg-light six">
+                        <h2 class="heading">Prologue</h2>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its own,
+                            safe country. But nothing the copy said could convince her and so it didn’t take long until
+                            a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their.</p>
+                    </div>
+                    <div id="page-7" class="page bg-light seven">
+                        <h2 class="heading">Epilogue</h2>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its own,
+                            safe country. But nothing the copy said could convince her and so it didn’t take long until
+                            a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their.</p>
+                    </div>
+                    <div id="page-8" class="page bg-light eight">
+                        <h2 class="heading">Epigraph</h2>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its own,
+                            safe country. But nothing the copy said could convince her and so it didn’t take long until
+                            a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged
+                            her into their agency, where they abused her for their.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pt">
+        <div class="container">
+            <div class="row justify-content-center py-5 mt-5">
+                <div class="col-md-5 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                    <span class="subheading">Services</span>
+                    <h2 class="mb-4">Services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="services-1 bg-light">
+                        <span class="icon">
+                            <i class="flaticon-user-experience"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-5">Experience</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="services-1 bg-light">
+                        <span class="icon">
+                            <i class="flaticon-network"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-5">Marketing Goals</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="services-1 bg-light">
+                        <span class="icon">
+                            <i class="flaticon-innovation"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-5">Targetting Vission</h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section testimony-section ftco-no-pb" id="testimonial-section">
+        <div class="img img-bg border" style="background-image:url(images/xbg_4.jpg.pagespeed.ic.uyyupfLttr.webp)">
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div
+                    class="col-md-12 text-center heading-section heading-section-white ftco-animate fadeInUp ftco-animated">
+                    <span class="subheading">Testimonial</span>
+                    <h2 class="mb-3">Kinds Words From Customers</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate fadeInUp ftco-animated">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl owl-loaded owl-drag">
+
+
+
+
+
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transition: all 2s ease 0s; width: 4180px; transform: translate3d(-1900px, 0px, 0px);">
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_3.jpg.pagespeed.ic.Cln-jaM1jK.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_2.jpg.pagespeed.ic.Xrdu_nPZRp.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_2.jpg.pagespeed.ic.Xrdu_nPZRp.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_3.jpg.pagespeed.ic.Cln-jaM1jK.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active center" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_2.jpg.pagespeed.ic.Xrdu_nPZRp.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_2.jpg.pagespeed.ic.Xrdu_nPZRp.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span
+                                                    class="fa fa-quote-left"></span></div>
+                                            <div class="text">
+                                                <p class="mb-4">Far far away, behind the word mountains, far from the
+                                                    countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-img"
+                                                        style="background-image:url(images/xperson_3.jpg.pagespeed.ic.Cln-jaM1jK.webp)">
+                                                    </div>
+                                                    <div class="pl-3">
+                                                        <p class="name">Roger Scott</p>
+                                                        <span class="position">Marketing Manager</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav disabled"><button role="presentation" class="owl-prev"><span
+                                    class="ion-ios-arrow-back"></span></button><button role="presentation"
+                                class="owl-next"><span class="ion-ios-arrow-forward"></span></button></div>
+                        <div class="owl-dots"><button class="owl-dot"><span></span></button><button
+                                class="owl-dot"><span></span></button><button
+                                class="owl-dot"><span></span></button><button
+                                class="owl-dot active"><span></span></button><button
+                                class="owl-dot"><span></span></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-project" id="projects-section">
+        <div class="container">
+            <div class="row no-gutters justify-content-center pb-5">
+                <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                    <span class="subheading">Projects</span>
+                    <h2 class="mb-4">My Other Books</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-end fadeInUp ftco-animated"
+                        style="background-image:url(images/xbook-1.jpg.pagespeed.ic.7REd66f0KP.webp)">
+                        <div class="overlay"></div>
+                        <div class="text p-4">
+                            <h3><a href="#">You Are Your Ony Limit</a></h3>
+                            <span>Romance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-end fadeInUp ftco-animated"
+                        style="background-image:url(images/xbook-2.jpg.pagespeed.ic.16ufL7WVkm.webp)">
+                        <div class="overlay"></div>
+                        <div class="text p-4">
+                            <h3><a href="#">You Are Your Ony Limit</a></h3>
+                            <span>Romance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-end fadeInUp ftco-animated"
+                        style="background-image:url(images/xbook-3.jpg.pagespeed.ic._2dqf9BoL2.webp)">
+                        <div class="overlay"></div>
+                        <div class="text p-4">
+                            <h3><a href="#">You Are Your Ony Limit</a></h3>
+                            <span>Romance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-end fadeInUp ftco-animated"
+                        style="background-image:url(images/xbook-4.jpg.pagespeed.ic.fIyELVE9vX.webp)">
+                        <div class="overlay"></div>
+                        <div class="text p-4">
+                            <h3><a href="#">You Are Your Ony Limit</a></h3>
+                            <span>Romance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-end fadeInUp ftco-animated"
+                        style="background-image:url(images/xbook-5.jpg.pagespeed.ic.TqwRtw5KEv.webp)">
+                        <div class="overlay"></div>
+                        <div class="text p-4">
+                            <h3><a href="#">You Are Your Ony Limit</a></h3>
+                            <span>Romance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-end fadeInUp ftco-animated"
+                        style="background-image:url(images/xbook-7.jpg.pagespeed.ic.ti1RKml22f.webp)">
+                        <div class="overlay"></div>
+                        <div class="text p-4">
+                            <h3><a href="#">You Are Your Ony Limit</a></h3>
+                            <span>Romance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-end fadeInUp ftco-animated"
+                        style="background-image:url(images/xbook-6.jpg.pagespeed.ic.YmoYyjq8Vk.webp)">
+                        <div class="overlay"></div>
+                        <div class="text p-4">
+                            <h3><a href="#">You Are Your Ony Limit</a></h3>
+                            <span>Romance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-end fadeInUp ftco-animated"
+                        style="background-image:url(images/xbook-8.jpg.pagespeed.ic.nzOOCrnBSi.webp)">
+                        <div class="overlay"></div>
+                        <div class="text p-4">
+                            <h3><a href="#">You Are Your Ony Limit</a></h3>
+                            <span>Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="author-section">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-6 col-lg-6 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="img d-flex align-self-stretch align-items-center"
+                            style="background-image:url(images/xabout.jpg.pagespeed.ic.-j2kfNwXDg.webp)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 d-flex">
+                    <div class="py-md-5 w-100 bg-light px-md-5">
+                        <div class="py-md-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+                                    <span class="subheading">Know More About The Author</span>
+                                    <h2 class="mb-4">Franklin Henderson</h2>
+                                    <p>A small river named Duden flows by their place and supplies it with the necessary
+                                        regelialia.</p>
+                                    <ul class="about-info mt-4 px-md-0 px-2">
+                                        <li class="d-flex"><span>Name:</span> <span>Franklin Henderson</span></li>
+                                        <li class="d-flex"><span>Date of birth:</span> <span>November 28, 1980</span>
+                                        </li>
+                                        <li class="d-flex"><span>Address:</span> <span>San Francisco CA 97987 USA</span>
+                                        </li>
+                                        <li class="d-flex"><span>Zip code:</span> <span>1000</span></li>
+                                        <li class="d-flex"><span>Email:</span> <span>franklinsample@gmail.com</span>
+                                        </li>
+                                        <li class="d-flex"><span>Phone: </span> <span>+1-2234-5678-9-0</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="counter-wrap ftco-animate d-flex mt-md-3 fadeInUp ftco-animated">
+                                <div class="text">
+                                    <p class="mb-4 btn-custom">
+                                        <span class="number" data-number="120">120</span>
+                                        <span>View All Books</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                    <h2 class="mb-4">Contact Me</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row d-flex contact-info mb-5">
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="align-self-stretch box text-center p-4 bg-light">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Address</h3>
+                            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="align-self-stretch box text-center p-4 bg-light">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-phone"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Contact Number</h3>
+                            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="align-self-stretch box text-center p-4 bg-light">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-paper-plane"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Email Address</h3>
+                            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+                    <div class="align-self-stretch box text-center p-4 bg-light">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-globe"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Website</h3>
+                            <p><a href="#">yoursite.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters block-9">
+                <div class="col-md-6 order-md-last d-flex">
+                    <form action="#" class="bg-light p-4 p-md-5 contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="7" class="form-control"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div id="map" class="map" style="position: relative; overflow: hidden;">
+                        <div
+                            style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                            <div class="gm-style"
+                                style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+                                <div><button draggable="false" aria-label="Keyboard shortcuts"
+                                        title="Keyboard shortcuts" type="button"
+                                        style="background: none transparent; display: block; border: none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; outline-offset: 3px; right: 0px; bottom: 0px; transform: translateX(100%);"></button>
+                                </div>
+                                <div tabindex="0" aria-label="Map" aria-roledescription="map" role="region"
+                                    style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+                                    <div
+                                        style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                        <div
+                                            style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                <div
+                                                    style="position: absolute; z-index: 993; transform: matrix(1, 0, 0, 1, -181, -34);">
+                                                    <div
+                                                        style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+                                                        <div style="width: 256px; height: 256px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;">
+                                        </div>
+                                        <div
+                                            style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;">
+                                        </div>
+                                        <div
+                                            style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                        </div>
+                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                            <div
+                                                style="position: absolute; z-index: 993; transform: matrix(1, 0, 0, 1, -181, -34);">
+                                                <div
+                                                    style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i37!3i48!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=78927"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                                <div
+                                                    style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i36!3i47!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=44649"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                                <div
+                                                    style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i37!3i47!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=127489"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                                <div
+                                                    style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i36!3i48!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=127158"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                                <div
+                                                    style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i38!3i47!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=79258"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                                <div
+                                                    style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i38!3i48!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=30696"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                                <div
+                                                    style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i38!3i49!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=113205"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                                <div
+                                                    style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i37!3i49!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=30365"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                                <div
+                                                    style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                    <img draggable="false" alt="" role="presentation"
+                                                        src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i36!3i49!4i256!2m3!1e0!2sm!3i609340052!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1379903&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=78596"
+                                                        style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                        <div
+                                            style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                            <div
+                                                style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;">
+                                            </div>
+                                            <div
+                                                style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;">
+                                            </div>
+                                            <div
+                                                style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                                                <span id="4053FBC6-0130-4187-AE0C-18FC2F1141FB"
+                                                    style="display: none;">To navigate, press the arrow keys.</span>
+                                            </div>
+                                            <div
+                                                style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gm-style-moc"
+                                        style="z-index: 4; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                                        <p class="gm-style-mot"></p>
+                                    </div>
+                                </div><iframe aria-hidden="true" frameborder="0" tabindex="-1"
+                                    style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+                                <div
+                                    style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);">
+                                </div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div><button draggable="false" aria-label="Toggle fullscreen view"
+                                        title="Toggle fullscreen view" type="button" aria-pressed="false"
+                                        class="gm-control-active gm-fullscreen-control"
+                                        style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img
+                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                                            alt="" style="height: 18px; width: 18px;"><img
+                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                                            alt="" style="height: 18px; width: 18px;"><img
+                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E"
+                                            alt="" style="height: 18px; width: 18px;"></button></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div>
+                                    <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"
+                                        draggable="false" data-control-width="40" data-control-height="113"
+                                        style="margin: 10px; user-select: none; position: absolute; bottom: 127px; right: 40px;">
+                                        <div class="gmnoprint" data-control-width="40" data-control-height="40"
+                                            style="display: none; position: absolute;">
+                                            <div
+                                                style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;">
+                                                <button draggable="false" aria-label="Rotate map clockwise"
+                                                    title="Rotate map clockwise" type="button" class="gm-control-active"
+                                                    style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;"><img
+                                                        alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                                        style="width: 20px; height: 20px;"><img alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                                        style="width: 20px; height: 20px;"><img alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                                        style="width: 20px; height: 20px;"></button>
+                                                <div
+                                                    style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;">
+                                                </div><button draggable="false" aria-label="Rotate map counterclockwise"
+                                                    title="Rotate map counterclockwise" type="button"
+                                                    class="gm-control-active"
+                                                    style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);"><img
+                                                        alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                                        style="width: 20px; height: 20px;"><img alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                                        style="width: 20px; height: 20px;"><img alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"
+                                                        style="width: 20px; height: 20px;"></button>
+                                                <div
+                                                    style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;">
+                                                </div><button draggable="false" aria-label="Tilt map" title="Tilt map"
+                                                    type="button" class="gm-tilt gm-control-active"
+                                                    style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;"><img
+                                                        alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                                                        style="width: 18px;"><img alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                                                        style="width: 18px;"><img alt=""
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"
+                                                        style="width: 18px;"></button>
+                                            </div>
+                                        </div>
+                                        <div style="position: absolute; left: 20px; top: 0px;"></div>
+                                        <div class="gmnoprint" data-control-width="40" data-control-height="81"
+                                            style="position: absolute; left: 0px; top: 32px;">
+                                            <div draggable="false"
+                                                style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;">
+                                                <button draggable="false" aria-label="Zoom in" title="Zoom in"
+                                                    type="button" class="gm-control-active"
+                                                    style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+                                                        alt="" style="height: 18px; width: 18px;"><img
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+                                                        alt="" style="height: 18px; width: 18px;"><img
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+                                                        alt="" style="height: 18px; width: 18px;"><img
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E"
+                                                        alt="" style="height: 18px; width: 18px;"></button>
+                                                <div
+                                                    style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;">
+                                                </div><button draggable="false" aria-label="Zoom out" title="Zoom out"
+                                                    type="button" class="gm-control-active"
+                                                    style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+                                                        alt="" style="height: 18px; width: 18px;"><img
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+                                                        alt="" style="height: 18px; width: 18px;"><img
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+                                                        alt="" style="height: 18px; width: 18px;"><img
+                                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E"
+                                                        alt="" style="height: 18px; width: 18px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        style="margin: 0px 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                        <a target="_blank" rel="noopener"
+                                            title="Open this area in Google Maps (opens a new window)"
+                                            aria-label="Open this area in Google Maps (opens a new window)"
+                                            href="https://maps.google.com/maps?ll=40.69847,-73.951442&amp;z=7&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3"
+                                            style="display: inline;">
+                                            <div style="width: 66px; height: 26px;"><img alt="Google"
+                                                    src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2069%2029%22%3E%3Cg%20opacity%3D%22.3%22%20fill%3D%22%23000%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M17.4706%207.33616L18.0118%206.79504%2017.4599%206.26493C16.0963%204.95519%2014.2582%203.94522%2011.7008%203.94522c-4.613699999999999%200-8.50262%203.7551699999999997-8.50262%208.395779999999998C3.19818%2016.9817%207.0871%2020.7368%2011.7008%2020.7368%2014.1712%2020.7368%2016.0773%2019.918%2017.574%2018.3689%2019.1435%2016.796%2019.5956%2014.6326%2019.5956%2012.957%2019.5956%2012.4338%2019.5516%2011.9316%2019.4661%2011.5041L19.3455%2010.9012H10.9508V14.4954H15.7809C15.6085%2015.092%2015.3488%2015.524%2015.0318%2015.8415%2014.403%2016.4629%2013.4495%2017.1509%2011.7008%2017.1509%209.04835%2017.1509%206.96482%2015.0197%206.96482%2012.341%206.96482%209.66239%209.04835%207.53119%2011.7008%207.53119%2013.137%207.53119%2014.176%208.09189%2014.9578%208.82348L15.4876%209.31922%2016.0006%208.80619%2017.4706%207.33616z%22/%3E%3Cpath%20d%3D%22M24.8656%2020.7286C27.9546%2020.7286%2030.4692%2018.3094%2030.4692%2015.0594%2030.4692%2011.7913%2027.953%209.39009%2024.8656%209.39009%2021.7783%209.39009%2019.2621%2011.7913%2019.2621%2015.0594c0%203.25%202.514499999999998%205.6692%205.6035%205.6692zM24.8656%2012.8282C25.8796%2012.8282%2026.8422%2013.6652%2026.8422%2015.0594%2026.8422%2016.4399%2025.8769%2017.2905%2024.8656%2017.2905%2023.8557%2017.2905%2022.8891%2016.4331%2022.8891%2015.0594%2022.8891%2013.672%2023.853%2012.8282%2024.8656%2012.8282z%22/%3E%3Cpath%20d%3D%22M35.7511%2017.2905v0H35.7469C34.737%2017.2905%2033.7703%2016.4331%2033.7703%2015.0594%2033.7703%2013.672%2034.7343%2012.8282%2035.7469%2012.8282%2036.7608%2012.8282%2037.7234%2013.6652%2037.7234%2015.0594%2037.7234%2016.4439%2036.7554%2017.2961%2035.7511%2017.2905zM35.7387%2020.7286C38.8277%2020.7286%2041.3422%2018.3094%2041.3422%2015.0594%2041.3422%2011.7913%2038.826%209.39009%2035.7387%209.39009%2032.6513%209.39009%2030.1351%2011.7913%2030.1351%2015.0594%2030.1351%2018.3102%2032.6587%2020.7286%2035.7387%2020.7286z%22/%3E%3Cpath%20d%3D%22M51.953%2010.4357V9.68573H48.3999V9.80826C47.8499%209.54648%2047.1977%209.38187%2046.4808%209.38187%2043.5971%209.38187%2041.0168%2011.8998%2041.0168%2015.0758%2041.0168%2017.2027%2042.1808%2019.0237%2043.8201%2019.9895L43.7543%2020.0168%2041.8737%2020.797%2041.1808%2021.0844%2041.4684%2021.7772C42.0912%2023.2776%2043.746%2025.1469%2046.5219%2025.1469%2047.9324%2025.1469%2049.3089%2024.7324%2050.3359%2023.7376%2051.3691%2022.7367%2051.953%2021.2411%2051.953%2019.2723v-8.8366zm-7.2194%209.9844L44.7334%2020.4196C45.2886%2020.6201%2045.878%2020.7286%2046.4808%2020.7286%2047.1616%2020.7286%2047.7866%2020.5819%2048.3218%2020.3395%2048.2342%2020.7286%2048.0801%2021.0105%2047.8966%2021.2077%2047.6154%2021.5099%2047.1764%2021.7088%2046.5219%2021.7088%2045.61%2021.7088%2045.0018%2021.0612%2044.7336%2020.4201zM46.6697%2012.8282C47.6419%2012.8282%2048.5477%2013.6765%2048.5477%2015.084%2048.5477%2016.4636%2047.6521%2017.2987%2046.6697%2017.2987%2045.6269%2017.2987%2044.6767%2016.4249%2044.6767%2015.084%2044.6767%2013.7086%2045.6362%2012.8282%2046.6697%2012.8282zM55.7387%205.22081v-.75H52.0788V20.4412H55.7387V5.22081z%22/%3E%3Cpath%20d%3D%22M63.9128%2016.0614L63.2945%2015.6492%2062.8766%2016.2637C62.4204%2016.9346%2061.8664%2017.3069%2061.0741%2017.3069%2060.6435%2017.3069%2060.3146%2017.2088%2060.0544%2017.0447%2059.9844%2017.0006%2059.9161%2016.9496%2059.8498%2016.8911L65.5497%2014.5286%2066.2322%2014.2456%2065.9596%2013.5589%2065.7406%2013.0075C65.2878%2011.8%2063.8507%209.39832%2060.8278%209.39832%2057.8445%209.39832%2055.5034%2011.7619%2055.5034%2015.0676%2055.5034%2018.2151%2057.8256%2020.7369%2061.0659%2020.7369%2063.6702%2020.7369%2065.177%2019.1378%2065.7942%2018.2213L66.2152%2017.5963%2065.5882%2017.1783%2063.9128%2016.0614zM61.3461%2012.8511L59.4108%2013.6526C59.7903%2013.0783%2060.4215%2012.7954%2060.9017%2012.7954%2061.067%2012.7954%2061.2153%2012.8161%2061.3461%2012.8511z%22/%3E%3C/g%3E%3Cpath%20d%3D%22M11.7008%2019.9868C7.48776%2019.9868%203.94818%2016.554%203.94818%2012.341%203.94818%208.12803%207.48776%204.69522%2011.7008%204.69522%2014.0331%204.69522%2015.692%205.60681%2016.9403%206.80583L15.4703%208.27586C14.5751%207.43819%2013.3597%206.78119%2011.7008%206.78119%208.62108%206.78119%206.21482%209.26135%206.21482%2012.341%206.21482%2015.4207%208.62108%2017.9009%2011.7008%2017.9009%2013.6964%2017.9009%2014.8297%2017.0961%2015.5606%2016.3734%2016.1601%2015.7738%2016.5461%2014.9197%2016.6939%2013.7454h-4.9931V11.6512h7.0298C18.8045%2012.0207%2018.8456%2012.4724%2018.8456%2012.957%2018.8456%2014.5255%2018.4186%2016.4637%2017.0389%2017.8434%2015.692%2019.2395%2013.9838%2019.9868%2011.7008%2019.9868zM29.7192%2015.0594C29.7192%2017.8927%2027.5429%2019.9786%2024.8656%2019.9786%2022.1884%2019.9786%2020.0121%2017.8927%2020.0121%2015.0594%2020.0121%2012.2096%2022.1884%2010.1401%2024.8656%2010.1401%2027.5429%2010.1401%2029.7192%2012.2096%2029.7192%2015.0594zM27.5922%2015.0594C27.5922%2013.2855%2026.3274%2012.0782%2024.8656%2012.0782S22.1391%2013.2937%2022.1391%2015.0594C22.1391%2016.8086%2023.4038%2018.0405%2024.8656%2018.0405S27.5922%2016.8168%2027.5922%2015.0594zM40.5922%2015.0594C40.5922%2017.8927%2038.4159%2019.9786%2035.7387%2019.9786%2033.0696%2019.9786%2030.8851%2017.8927%2030.8851%2015.0594%2030.8851%2012.2096%2033.0614%2010.1401%2035.7387%2010.1401%2038.4159%2010.1401%2040.5922%2012.2096%2040.5922%2015.0594zM38.4734%2015.0594C38.4734%2013.2855%2037.2087%2012.0782%2035.7469%2012.0782%2034.2851%2012.0782%2033.0203%2013.2937%2033.0203%2015.0594%2033.0203%2016.8086%2034.2851%2018.0405%2035.7469%2018.0405%2037.2087%2018.0487%2038.4734%2016.8168%2038.4734%2015.0594zM51.203%2010.4357v8.8366C51.203%2022.9105%2049.0595%2024.3969%2046.5219%2024.3969%2044.132%2024.3969%2042.7031%2022.7955%2042.161%2021.4897L44.0417%2020.7095C44.3784%2021.5143%2045.1997%2022.4588%2046.5219%2022.4588%2048.1479%2022.4588%2049.1499%2021.4487%2049.1499%2019.568V18.8617H49.0759C48.5914%2019.4612%2047.6552%2019.9786%2046.4808%2019.9786%2044.0171%2019.9786%2041.7668%2017.8352%2041.7668%2015.0758%2041.7668%2012.3%2044.0253%2010.1319%2046.4808%2010.1319%2047.6552%2010.1319%2048.5914%2010.6575%2049.0759%2011.2323H49.1499V10.4357H51.203zM49.2977%2015.084C49.2977%2013.3512%2048.1397%2012.0782%2046.6697%2012.0782%2045.175%2012.0782%2043.9267%2013.3429%2043.9267%2015.084%2043.9267%2016.8004%2045.175%2018.0487%2046.6697%2018.0487%2048.1397%2018.0487%2049.2977%2016.8004%2049.2977%2015.084zM54.9887%205.22081V19.6912H52.8288V5.22081H54.9887zM63.4968%2016.6854L65.1722%2017.8023C64.6301%2018.6072%2063.3244%2019.9869%2061.0659%2019.9869%2058.2655%2019.9869%2056.2534%2017.827%2056.2534%2015.0676%2056.2534%2012.1439%2058.2901%2010.1483%2060.8278%2010.1483%2063.3818%2010.1483%2064.6301%2012.1768%2065.0408%2013.2773L65.2625%2013.8357%2058.6843%2016.5623C59.1853%2017.5478%2059.9737%2018.0569%2061.0741%2018.0569%2062.1746%2018.0569%2062.9384%2017.5067%2063.4968%2016.6854zM58.3312%2014.9115L62.7331%2013.0884C62.4867%2012.4724%2061.764%2012.0454%2060.9017%2012.0454%2059.8012%2012.0454%2058.2737%2013.0145%2058.3312%2014.9115z%22%20fill%3D%22%23fff%22/%3E%3C/svg%3E"
+                                                    draggable="false"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
+                                            </div>
+                                        </a></div>
+                                </div>
+                                <div></div>
+                                <div>
+                                    <div style="display: inline-flex; position: absolute; right: 0px; bottom: 0px;">
+                                        <div class="gmnoprint" style="z-index: 1000001;">
+                                            <div draggable="false" class="gm-style-cc"
+                                                style="user-select: none; position: relative; height: 14px; line-height: 14px;">
+                                                <div
+                                                    style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                    <div style="width: 1px;"></div>
+                                                    <div
+                                                        style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                    <button draggable="false" aria-label="Keyboard shortcuts"
+                                                        title="Keyboard shortcuts" type="button"
+                                                        style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit;">Keyboard
+                                                        shortcuts</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="gmnoprint" style="z-index: 1000001;">
+                                            <div draggable="false" class="gm-style-cc"
+                                                style="user-select: none; position: relative; height: 14px; line-height: 14px;">
+                                                <div
+                                                    style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                    <div style="width: 1px;"></div>
+                                                    <div
+                                                        style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                    <button draggable="false" aria-label="Map Data" title="Map Data"
+                                                        type="button"
+                                                        style="background: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit; display: none;">Map
+                                                        Data</button><span style="">Map data ©2022 Google</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="gmnoscreen">
+                                            <div
+                                                style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+                                                Map data ©2022 Google</div>
+                                        </div>
+                                        <div draggable="false" class="gm-style-cc"
+                                            style="user-select: none; position: relative; height: 14px; line-height: 14px; display: none;">
+                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                <div style="width: 1px;"></div>
+                                                <div
+                                                    style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                <span>50 km&nbsp;</span>
+                                                <div
+                                                    style="position: relative; display: inline-block; height: 8px; bottom: -1px; width: 56px;">
+                                                    <div
+                                                        style="width: 100%; height: 4px; position: absolute; left: 0px; top: 0px;">
+                                                    </div>
+                                                    <div
+                                                        style="width: 4px; height: 8px; left: 0px; top: 0px; background-color: rgb(255, 255, 255);">
+                                                    </div>
+                                                    <div
+                                                        style="width: 4px; height: 8px; position: absolute; background-color: rgb(255, 255, 255); right: 0px; bottom: 0px;">
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; background-color: rgb(102, 102, 102); height: 2px; left: 1px; bottom: 1px; right: 1px;">
+                                                    </div>
+                                                    <div
+                                                        style="position: absolute; width: 2px; height: 6px; left: 1px; top: 1px; background-color: rgb(102, 102, 102);">
+                                                    </div>
+                                                    <div
+                                                        style="width: 2px; height: 6px; position: absolute; background-color: rgb(102, 102, 102); bottom: 1px; right: 1px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gmnoprint gm-style-cc" draggable="false"
+                                            style="z-index: 1000001; user-select: none; position: relative; height: 14px; line-height: 14px;">
+                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                <div style="width: 1px;"></div>
+                                                <div
+                                                    style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                <a href="https://www.google.com/intl/en-US_US/help/terms_maps.html"
+                                                    target="_blank" rel="noopener"
+                                                    style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms
+                                                    of Use</a></div>
+                                        </div>
+                                        <div draggable="false" class="gm-style-cc"
+                                            style="user-select: none; position: relative; height: 14px; line-height: 14px; display: none;">
+                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                <div style="width: 1px;"></div>
+                                                <div
+                                                    style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                <a target="_blank" rel="noopener"
+                                                    title="Report errors in the road map or imagery to Google" dir="ltr"
+                                                    href="https://www.google.com/maps/@40.6984703,-73.9514422,7z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                                                    style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Report
+                                                    a map error</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;">
+                            <div><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg"
+                                    draggable="false"
+                                    style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;">
+                            </div>
+                            <div style="line-height: 20px; margin: 15px 0px;"><span
+                                    style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google
+                                    Maps correctly.</span></div>
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="line-height: 16px; vertical-align: middle;"><a
+                                            href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors"
+                                            target="_blank" rel="noopener"
+                                            style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own this
+                                            website?</a></td>
+                                    <td style="text-align: right;"><button class="dismissButton">OK</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">About</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span
+                                        class="fa fa-twitter"></span></a></li>
+                            <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span
+                                        class="fa fa-facebook"></span></a></li>
+                            <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span
+                                        class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Chapter</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Services</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Experience</a></li>
+                            <li><a href="#">Marketing Goals</a></li>
+                            <li><a href="#">Targetting Vission</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain
+                                        View, San Francisco, California, USA</span></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
+                                            210</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+                                            class="text">info@yourdomain.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script>2022 All rights reserved | This
+                        template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="ftco-loader" class="fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"></circle>
+        </svg></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js+popper.min.js+bootstrap.min.js.pagespeed.jc.JHZ20Zp0_b.js"></script>
+    <script>eval(mod_pagespeed_RnMiAhKU_u);</script>
+    <script>eval(mod_pagespeed_SCQZmRqKN3);</script>
+    <script>eval(mod_pagespeed_aKlB_DizzG);</script>
+    <script
+        src="js/jquery.easing.1.3.js+jquery.waypoints.min.js+jquery.stellar.min.js+owl.carousel.min.js.pagespeed.jc.jxBPC5Ttgn.js"></script>
+    <script>eval(mod_pagespeed_YJ1csdlNvN);</script>
+    <script>eval(mod_pagespeed_uAXIVM3doh);</script>
+    <script>eval(mod_pagespeed_FacjMT51xN);</script>
+    <script>eval(mod_pagespeed_hpLGaKMiFY);</script>
+    <script
+        src="js/jquery.magnific-popup.min.js+jquery.animateNumber.min.js+scrollax.min.js+google-map.js+main.js.pagespeed.jc.zPAUCnbQR0.js"></script>
+    <script>eval(mod_pagespeed_$3ThuVbXLI);</script>
+    <script>eval(mod_pagespeed_2u2Asl2zn7);</script>
+    <script>eval(mod_pagespeed_qDb$UbWhVM);</script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+    <script>eval(mod_pagespeed_dc0tkUCn8x);</script>
+    <script>eval(mod_pagespeed_tXiAeDiJpM);</script>
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer=""
+        src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+        data-cf-beacon="{&quot;rayId&quot;:&quot;724e384d6df0fa58&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2022.6.0&quot;,&quot;si&quot;:100}"
+        crossorigin="anonymous"></script>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
