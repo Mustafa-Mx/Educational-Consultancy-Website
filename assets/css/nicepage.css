@@ -13307,7 +13307,7 @@ section.u-image:not(.u-hover-box),
 }
 .u-back-to-top {
   position: fixed;
-  z-index: 100000;
+  z-index: 10;
   display: none;
 }
 .u-post-details {

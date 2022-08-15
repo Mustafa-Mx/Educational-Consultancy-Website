@@ -834,7 +834,7 @@ a:hover{text-decoration: none;}
   }
   .main-nav .nav li div a {
     font-size: 1.2rem;
-    padding: 1rem 30vw 3rem;
+    padding: 1rem 20vw 3rem;
   }
   .main-nav .nav li:last-child div a {
     color: white !important;
