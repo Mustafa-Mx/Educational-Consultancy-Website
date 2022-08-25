@@ -163,6 +163,9 @@
 }
 
 @media (max-width: 767px) {
+  .card{
+    width: 90vw;
+  }
   .u-section-1 .u-text-1 {
     width: 540px;
   }

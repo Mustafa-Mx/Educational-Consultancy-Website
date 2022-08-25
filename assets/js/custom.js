@@ -7,12 +7,16 @@
     var header = $('header').height();
     if($(window).width() > 992){
     if (scroll > 105) {
+      $("svg").removeClass("cl");
       $("header").addClass("background-header");
     } else {
       $("header").removeClass("background-header");
+      $("svg").addClass("cl");
     }}
+
   });
 
+  
 
 	$('.loop').owlCarousel({
       center: true,
@@ -182,6 +186,7 @@ $(function() {
 	 $(window).on('load', function() {
 
         $('#js-preloader').addClass('loaded');
+        ($(window).width() < 992)?$("svg").removeClass("cl"):console.log(1);
 
     });
 
@@ -202,3 +207,4 @@ $(function() {
 
 
 })(window.jQuery);
+

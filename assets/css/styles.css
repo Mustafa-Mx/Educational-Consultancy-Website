@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
 
 body {
   margin:0;
@@ -20,11 +20,11 @@ p {
 .header {
   position: relative;
   text-align: center;
- background: url(https://www.state.gov/wp-content/uploads/2019/06/shutterstock_551334580-2560x852.jpg);
+ background: url(../images/bg-2.jpeg);
  background-size: cover;
  background-attachment: fixed;
   color: white;
-
+ /* background:  rgb(21, 147, 221); */
  /*background: linear-gradient(60deg, rgba(84,58,183,1) , rgba(0,172,193,1) );*/
 }
 .logo {

@@ -204,7 +204,7 @@ div > .shape{
 }
 .overflow::before{    position: absolute;
     width: 100%;
-    height: 40%;
+    height: 50%;
     content: "";
     background: inherit;
     /* top: 0; */
@@ -327,7 +327,7 @@ div.col-lg-5 > .m-10::after{
         padding: 0;
     }
     .overflow::before{ 
-        height: 110vh;
+        height: 85vh;
     }
 
     h1{

@@ -95,6 +95,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
   max-width: 100%;
 }
 
+svg.cl g , svg.sl g{
+  fill: white;
+} 
 .clearfix:after {
   content: ".";
   display: block;
@@ -1390,7 +1393,7 @@ a {
   opacity: 0.75;
 }
 .product-slider__card {
-  background:linear-gradient(45deg, #62098b -68%, transparent 110%);
+  background:linear-gradient(45deg, #62098b 50% , transparent 104%);
   height: 100%;
   display: flex;
   align-items: center;
@@ -3054,6 +3057,9 @@ responsive
 }
 
 @media (max-width: 767px) {
+  .btn{
+    padding: 10px 35px;
+  }
   .section-heading h4{
     font-size: 2.5rem;
   }
