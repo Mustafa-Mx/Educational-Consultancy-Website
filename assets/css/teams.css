@@ -141,11 +141,10 @@ body{
    
 }
 .social-icons{
-    transition:all 0.5s;
+    transition: all 0.5s;
     position: absolute;
-    top: 50%;
-    left: 35%;
-    opacity: 0;
+    bottom: 24%;
+    left: 14%;
 }
 .social-icons > a{ 
     color: #ffffff;
@@ -236,6 +235,7 @@ background: linear-gradient(266deg, #080107 , #645bf6); */
     left: -10%;
     /* transform: skewY(241deg) translateY(-37rem); */
     z-index: -1;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 .click{
     transition:all 0.5s;
@@ -251,22 +251,23 @@ background: linear-gradient(266deg, #080107 , #645bf6); */
 }
 #ceo{
     overflow: hidden;
-    border-radius: 0 0 62% 0;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow:  2px 2px 20px -3px #262626;
 }
 
 .ceo-overlay{
     outline:none; 
+    overflow: hidden;
 }
 .ceo-overlay::before{
-
+    border-radius: 50px;
     position: absolute;
     content: '';
-    height: 100%;
-    width: 100%;
-    background-color: rgb(0 0 0 / 91%);
-    top: 0;
-    left: 0;  
+    height: 11%;
+    width: 43%;
+    background-color: rgba(255, 255, 255, 0.91);
+    bottom: 24%;
+    left: 4%;
 }
 .ceo-name{
     font-weight: 800;
