@@ -145,6 +145,7 @@ body{
     position: absolute;
     bottom: 24%;
     left: 14%;
+    opacity:0;
 }
 .social-icons > a{ 
     color: #ffffff;
@@ -153,30 +154,6 @@ body{
     color:unset;
 }
 
-.fa-facebook:hover {
-    color: #0344d0;
-    background-color: #fff;
-    border-radius: 100%;
-}
-.fa-twitter:hover{
-    color: #00aced;
-}
-.fa-linkedin:hover {
-    background-color: #fff;
-    color: #007bb6;
-}
-.fa-whatsapp:hover {    
-    color: #fff;
-    background-color: #00b60f;
-    border-radius:50%;
-
-}
-.fa-instagram:hover {
-        background:linear-gradient(60deg ,#ff02ff, #03afff);
-       -webkit-text-fill-color: #ffffff;
-        text-shadow: 0px 0px 1px #00000045;
-        border-radius: 50%;
-}
 
 div.img >img{
     border: none;
