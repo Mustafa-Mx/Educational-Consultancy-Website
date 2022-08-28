@@ -1946,6 +1946,8 @@ Services Style
 }
 
 .services:after {
+  filter: hue-rotate(0deg) saturate(5.5);
+
   content: '';
   background-image: url(../images/services-left-dec.png);
   background-repeat: no-repeat;
@@ -1957,17 +1959,21 @@ Services Style
   z-index: 0;
 }
 
-/* .services:before {
+ .box-pad:before {
+  filter: hue-rotate(0deg) saturate(5.5);
+  transform: rotate(180deg);
+  width: 261px;
+  height: 368px;
   content: '';
-  background-image: url(../images/services-right-dec.png);
+  background-image: url(../images/services-left-dec.png);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
-  top: 0;
-  width: 1136px;
-  height: 244px;
-  z-index: 0;
-} */
+  bottom: 300px;
+  /* width: 1136px; */
+  /* height: 244px; */
+  z-index: 1;
+}
 
 .services .section-heading {
   text-align: center;
@@ -2083,23 +2089,23 @@ About Us
 }
 
 .about-us .section-heading,
-.about-us .box-item,
-.about-us p,
-.about-us .box-item .gradient-button,
-.about-us .box-item span {
+.services .box-item,
+  .services p,
+  .services .box-item .gradient-button,
+  .services .box-item span {
   position: relative;
   z-index: 1;
 }
 
-.about-us .box-item {
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
+.services .box-item {
+  box-shadow: 0px 0px 0px 1px rgb(69 125 181 / 12%);
   padding: 10px 30px;
   background-color: #fff;
   border-radius: 40px;
   margin-bottom: 30px;
 }
 
-.about-us .box-item h4 a {
+.services .box-item h4 a {
   font-size: 20px;
   font-weight: 700;
   margin-top: 8px;
@@ -2107,18 +2113,30 @@ About Us
   transition: all .3s;
 }
 
-.about-us .box-item p {
+.services .box-item p {
   margin-bottom: 0px;
 }
 
-.about-us .box-item:hover h4 a {
+.services .box-item:hover h4 a {
   color: #4b8ef1;
 }
 
-.about-us .gradient-button {
+.services .gradient-button {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
+.services .box-pad{
+  background: aliceblue;
+    box-shadow: 0 0 0 100vmax aliceblue , 0 0 10px 10px black;
+    clip-path: inset(0 -100vmax);
+    padding:3rem 0;
+    margin: 2rem 0;
+}
+.services .box-pad .box-item{
+  margin: 1rem 0;
+}
+
 
 .about-us span {
   font-size: 14px;
@@ -2950,6 +2968,8 @@ responsive
 }
 
 @media (max-width: 992px) {
+  .services .box-pad{
+   text-align: center; }
   .header-area {
     background-color: #fff;
   }
